@@ -38,7 +38,7 @@ Selection.c sorts an array using selection sort. Selection sort has a run time o
 One of the pointers iterates through the array looking for a smaller value. When one is found, the second pointer is set to that as the new minimum. When the first pointer reaches the end of the array we swap the values of the second and third pointer. Then move the third pointer to the next index, return the first and second points to the index of the third. This repeats until the array is sorted.
 
 
-# Counting Sort
+## Counting Sort
 
 Counting.c is a program that sorts an array using counting sort. Counting sort has a linear run time, but requires space equivalent to the largest value in the array. First we build an array of all zeros with length equal to the max value in the array to be sorted. Then we run through the array and with every value encountered we increment the corresponding index in the other array. Then when finished the other array contains a zero for every value that doesn’t exist and a number representing the amount of each individual value in the unsorted array. Since the indexs of the array are in order by default all we have to do is run through it and push the index value for the amount stored at that index in order
 
